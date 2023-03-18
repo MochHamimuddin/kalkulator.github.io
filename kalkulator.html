@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form id="kalkulator">
+    <table align="center" cellpadding="10" cellspacing="0">
+      <thead>
+          <th>
+              Kalkulator
+          </th>
+      </thead>
+      <tr>
+        <td>
+          <input id="colum" onchange="removeFail(this)" type="number" placeholder="Angka1" name="angka1" />
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <input id="colum" onchange="removeFail(this)" type="number" placeholder="Angka2" name="angka2" />
+        </td>
+        </tr>
+        <td>
+          <input readonly id="colum" type="number" placeholder="" name="hasil" />
+        </td>
+      </tr>
+      <tr>
+          <th colspan="4">
+            <button id="tmb"onclick="penambahan()" type="button">+</button>
+            <button id="kr" onclick="pengurangan()" type="button">-</button>
+            <button id="kl" onclick="perkalian()" type="button">x</button>
+            <button id="bgi" onclick="pembagian()" type="button">/</button>
+            <button id="pkt" onclick="perpangkatan()" type="button">^</button>
+          </th>
+      </tr>
+    </table>
+  </form>
+  <script src="js/fungsi.js"></script>
+</body>
+</html>

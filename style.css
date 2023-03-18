@@ -1,0 +1,66 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+table {
+  width: 400px;
+}
+th {
+  font-size: 32px;
+  color: #c7e8ca;
+  border-radius: 10px;
+}
+thead {
+  background-color: #5d9c59;
+}
+#colum {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: #5d9c59;
+  text-align: center;
+}
+#tmb {
+  padding: 10px 15px 10px 15px;
+  margin: 3px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: blue;
+  border-color: #fff;
+  font-size: 20px;
+}
+#kr {
+  padding: 10px 15px 10px 15px;
+  margin: 3px;
+  border-radius: 5px;
+  color: #000;
+  background-color: aqua;
+  border-color: #fff;
+  font-size: 20px;
+}
+#kl {
+  padding: 10px 15px 10px 15px;
+  margin: 3px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: green;
+  border-color: #fff;
+  font-size: 20px;
+}
+#bgi {
+  padding: 10px 15px 10px 15px;
+  margin: 3px;
+  border-radius: 5px;
+  color: #000;
+  background-color: yellow;
+  border-color: #fff;
+  font-size: 20px;
+}
+#pkt {
+  padding: 10px 15px 10px 15px;
+  margin: 3px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: red;
+  border-color: #fff;
+  font-size: 20px;
+}
