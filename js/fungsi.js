@@ -14,7 +14,7 @@ function getValue() {
     } else if (kalk.angka2.value == "") {
       kalk.angka2.classList.add("fail");
     }
-    alert("Anda harus mengisi semua masukan yang ada!");
+    alert("Mohon Untuk Diisi Dengan Angka!");
   } else {
     angka1 = parseFloat(kalk.angka1.value);
     angka2 = parseFloat(kalk.angka2.value);
