@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 6 js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead id="atas">
+        <th colspan="3">DATA GEMPA</th>
+      </thead>
+      <thead>
+        <th>LOKASI GEMPA&nbsp;<ion-icon name="location-outline"></ion-icon></th>
+        <th>SKALA&nbsp;<ion-icon name="trending-up-outline"></ion-icon></th>
+        <th>DAMPAK&nbsp;<ion-icon name="business-outline"></ion-icon></th>
+      </thead>
+      <tbody>
+        <script>
+          class gempa {
+            constructor(lokasi, skala) {
+              this.lokasi = lokasi;
+              this.skala = skala;
+            }
+            LokasiGempa() {
+              switch (this.lokasi) {
+                case "Bandung":
+                  return this.skala;
+                  break;
+                case "Cirebon":
+                  return this.skala;
+                  break;
+                case "Jakarta":
+                  return this.skala;
+                  break;
+                case "Surabaya":
+                  return this.skala;
+                  break;
+                default:
+                  return 0;
+              }
+            }
+            dampak() {
+              let result;
+              if (this.skala <= 2) {
+                result = "Gempa Tidak Terasa";
+              } else if (this.skala > 2 && this.skala <= 4) {
+                result = "Bangunan Retak Retak";
+              } else if (this.skala > 4 && this.skala <= 6) {
+                result = "Bangunan Roboh";
+              } else {
+                result = "Bangunan Roboh dan Potensi Tsunami";
+              }
+              return result;
+            }
+            cetak(informasi) {
+              if (this.lokasi == "Bandung") {
+                document.write(`
+                  <tr>
+                    <td>${this.lokasi}</td>
+                    <td>${this.skala} Magnitudo</td>
+                    <td>${informasi}</td>
+                    </tr>`);
+              }
+              if (this.lokasi == "Cirebon") {
+                document.write(`
+                  <tr>
+                    <td>${this.lokasi}</td>
+                    <td>${this.skala} Magnitudo</td>
+                    <td>${informasi}</td>
+                    </tr>`);
+              }
+              if (this.lokasi == "Jakarta") {
+                document.write(`
+                  <tr>
+                    <td>${this.lokasi}</td>
+                    <td>${this.skala} Magnitudo</td>
+                    <td>${informasi}</td>
+                    </tr>`);
+              }
+              if (this.lokasi == "Surabaya") {
+                document.write(`
+                  <tr>
+                    <td>${this.lokasi}</td>
+                    <td>${this.skala} Magnitudo</td>
+                    <td>${informasi}</td>
+                    </tr>`);
+              }
+            }
+          }
+          let g1 = new gempa("Bandung", 3);
+          let g2 = new gempa("Cirebon", 2);
+          let g3 = new gempa("Jakarta", 8);
+          let g4 = new gempa("Surabaya", 5);
+          let g5 = new gempa("Bandung", 4);
+          let g6 = new gempa("Cirebon", 7);
+          let g7 = new gempa("Jakarta", 9);
+          let g8 = new gempa("Surabaya", 1);
+
+          informasi1 = g1.dampak();
+          informasi2 = g2.dampak();
+          informasi3 = g3.dampak();
+          informasi4 = g4.dampak();
+          informasi5 = g5.dampak();
+          informasi6 = g6.dampak();
+          informasi7 = g7.dampak();
+          informasi8 = g8.dampak();
+
+          g1.cetak(informasi1);
+          g2.cetak(informasi2);
+          g3.cetak(informasi3);
+          g4.cetak(informasi4);
+          g5.cetak(informasi5);
+          g6.cetak(informasi6);
+          g7.cetak(informasi7);
+          g8.cetak(informasi8);
+        </script>
+      </tbody>
+      <tfoot>
+        <th colspan="3">Data diatas sewaktu - waktu dapat berubah</th>
+      </tfoot>
+    </table>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
